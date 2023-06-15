@@ -31,7 +31,7 @@ def new_candy():
         # if it has req info username and password then returns none
         if(error != None):
             return make_response(jsonify(error),400)
-        results = dbhelper.run_procedure('call new_client(?,?,?)',[request.json.get("name"),request.json.get("image_url"),request.json.get("description")])
+        results = dbhelper.run_procedure('call new_candy(?,?,?)',[request.json.get("name"),request.json.get("image_url"),request.json.get("description")])
         # if results come back as a list jsonify results
         if(type(results) == list):
             return make_response(jsonify(results),200)
