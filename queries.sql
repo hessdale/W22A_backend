@@ -1,0 +1,2 @@
+call new_candy("Lollipop", "https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+"A blue lollipop is a sweet confectionery treat with a vibrant blue hue. Its circular shape, infused with blueberry flavor, offers a delightful burst of sweetness, enticing taste buds with a twist."); 

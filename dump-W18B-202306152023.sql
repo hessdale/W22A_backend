@@ -28,7 +28,7 @@ CREATE TABLE `candy` (
   `image_url` varchar(250) DEFAULT NULL,
   `description` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `candy` (
 
 LOCK TABLES `candy` WRITE;
 /*!40000 ALTER TABLE `candy` DISABLE KEYS */;
-INSERT INTO `candy` VALUES (1,'Lollipop','https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','A blue lollipop is a sweet confectionery treat with a vibrant blue hue. Its circular shape, infused with blueberry flavor, offers a delightful burst of sweetness, enticing taste buds with a twist.'),(2,'Cherries','https://images.pexels.com/photos/1405760/pexels-photo-1405760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','Cherry candies: small, red treats with a burst of fruity flavor, offering a delightful sweet and tangy experience.'),(4,'Gummy Bears','https://images.pexels.com/photos/298937/gummibarchen-gummi-bears-fruit-gums-bear-298937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','Gummy bears: chewy, colorful candies in the shape of bears, providing a fun and fruity snacking experience.'),(5,'Gummy Worms','https://images.pexels.com/photos/4016601/pexels-photo-4016601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','Gummy worms: stretchy, sugary treats resembling worms, providing a combination of tangy and fruity flavors to enjoy.');
+INSERT INTO `candy` VALUES (2,'Cherries','https://images.pexels.com/photos/1405760/pexels-photo-1405760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','Cherry candies: small, red treats with a burst of fruity flavor, offering a delightful sweet and tangy experience.'),(4,'Gummy Bears','https://images.pexels.com/photos/298937/gummibarchen-gummi-bears-fruit-gums-bear-298937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','Gummy bears: chewy, colorful candies in the shape of bears, providing a fun and fruity snacking experience.'),(5,'Gummy Worms','https://images.pexels.com/photos/4016601/pexels-photo-4016601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','Gummy worms: stretchy, sugary treats resembling worms, providing a combination of tangy and fruity flavors to enjoy.'),(10,'Lollipop','https://images.pexels.com/photos/1289363/pexels-photo-1289363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1','A blue lollipop is a sweet confectionery treat with a vibrant blue hue. Its circular shape, infused with blueberry flavor, offers a delightful burst of sweetness, enticing taste buds with a twist.');
 /*!40000 ALTER TABLE `candy` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -117,4 +117,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-15 17:54:13
+-- Dump completed on 2023-06-15 20:23:16
