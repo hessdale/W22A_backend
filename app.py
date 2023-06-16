@@ -25,10 +25,10 @@ def get_all_candy():
 
 @app.post('/api/candy')
 def new_candy():
-        # try to check req endpoint data in dbhelper and calls procedure to create a new client
+        # try to check req endpoint data in dbhelper and calls procedure to add new candy to db
     try:
         error = dbhelper.check_endpoint_info(request.json,["name","image_url","description"])
-        # if it has req info username and password then returns none
+        # if it has req info name, image_url and description
         if(error != None):
             return make_response(jsonify(error),400)
         results = dbhelper.run_procedure('call new_candy(?,?,?)',[request.json.get("name"),request.json.get("image_url"),request.json.get("description")])
@@ -47,16 +47,16 @@ def new_candy():
 
 @app.delete('/api/candy')
 def delete_candy():
-        # try to check req endpoint data in dbhelper and calls procedure to create a new client
+        # try to check req endpoint data in dbhelper and calls procedure to delete a candy
     try:
         error = dbhelper.check_endpoint_info(request.json,["id"])
-        # if it has req info username and password then returns none
+        # if it has req info ID then returns None
         if(error != None):
             return make_response(jsonify(error),400)
         results = dbhelper.run_procedure('call delete_candy(?)',[request.json.get("id")])
-        # if results come back as a list jsonify results
-        if(type(results) == list):
-            return make_response(jsonify(results),200)
+        # if results come back as None delete successful
+        if(results == None):
+            return make_response('delete successful',200)
         else:
             return make_response('sorry something went wrong',500)
     # some except blocks with possible errors
